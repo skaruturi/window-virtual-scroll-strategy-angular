@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  border-bottom: 1px solid black;
+}
+
+::ng-deep .cdk-virtual-scroll-viewport {
+  display: block;
+  position: relative;
+  overflow: visible;
+  contain: none;
+
+  .cdk-virtual-scroll-content-wrapper {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .cdk-virtual-scroll-spacer {
+    position: relative;
+  }
+}
